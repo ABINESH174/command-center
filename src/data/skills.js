@@ -1,4 +1,4 @@
-export const technologyEcosystem = {
+export const skills = {
   systems: ["Linux", "Shell", "Bash", "Virtual Machines", "Process Monitoring"],
 
   devops: [

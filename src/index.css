@@ -32,7 +32,9 @@ body {
 
   margin: 0 auto;
 
-  padding: 6rem 2rem;
+  padding-left: 2rem;
+
+  padding-right: 2rem;
 }
 
 .card {
