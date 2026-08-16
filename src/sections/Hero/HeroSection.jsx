@@ -7,17 +7,31 @@ import { profile } from "../../data/profile";
 function HeroSection() {
   return (
     <section className="section-container">
-      <div className="grid gap-12 lg:grid-cols-2">
+      <div
+        className="
+            grid
+            gap-8
+            lg:grid-cols-2"
+      >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="mb-4 text-green-500 terminal-font">
+          {/* <p className="mb-4 text-green-500 terminal-font">
             ENGINEERING COMMAND CENTER
-          </p>
+          </p> */}
 
-          <h1 className="mb-6 text-6xl font-bold">{profile.name}</h1>
+          <h1
+            className="
+              text-4xl
+              font-bold
+              md:text-5xl
+              lg:text-6xl
+              "
+          >
+            {profile.name}
+          </h1>
 
           <h2 className="mb-6 text-2xl text-blue-400">{profile.currentRole}</h2>
 

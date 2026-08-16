@@ -1,10 +1,15 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import SystemClock from "../../components/ui/SystemClock";
 
 function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-gray-800 bg-[#111827]/90 backdrop-blur-md">
       <div className="section-container flex items-center justify-between py-5">
-        <h1 className="text-xl font-bold">COMMAND CENTER</h1>
+        <div>
+          <h1 className="text-xl font-bold">ENGINEERING COMMAND CENTER</h1>
+
+          <p className="terminal-font text-xs text-green-500">STATUS: ONLINE</p>
+        </div>
 
         <div className="flex gap-6">
           <a href="#projects">Projects</a>
@@ -13,13 +18,14 @@ function Navbar() {
 
           <a href="#roadmap">Roadmap</a>
 
-          <a href="#">
+          <a href="{socialLinks.github}" target="_blank">
             <FaGithub />
           </a>
 
-          <a href="#">
+          <a href="{socialLinks.linkedin}" target="_blank">
             <FaLinkedin />
           </a>
+          <SystemClock />
         </div>
       </div>
     </nav>

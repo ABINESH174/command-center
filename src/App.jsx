@@ -10,18 +10,29 @@ import ObservabilitySection from "./sections/Observability/ObservabilitySection"
 import RoadmapSection from "./sections/Roadmap/RoadmapSection";
 import FooterSection from "./sections/Footer/FooterSection";
 
+import SectionWrapper from "./components/shared/SectionWrapper";
+
 function App() {
   return (
     <>
       <Navbar />
 
-      <HeroSection />
+      {/* The SectionWrapper provides section transitions, But it's not working, need to work on that... */}
+      <SectionWrapper animation="fade">
+        <HeroSection />
+      </SectionWrapper>
 
-      <SystemStatusSection />
+      <SectionWrapper animation="slide">
+        <SystemStatusSection />
+      </SectionWrapper>
 
-      <EngineeringDashboardSection />
+      <SectionWrapper animation="reveal">
+        <EngineeringDashboardSection />
+      </SectionWrapper>
 
-      <TechnologyEcosystemSection />
+      <SectionWrapper animation="expand">
+        <TechnologyEcosystemSection />
+      </SectionWrapper>
 
       <InfrastructureSection />
 

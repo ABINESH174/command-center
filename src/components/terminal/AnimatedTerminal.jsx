@@ -1,9 +1,14 @@
 import { TypeAnimation } from "react-type-animation";
 
 import { terminalCommands } from "../../data/terminalCommands";
+import { siteConfig } from "../../config/siteConfig";
 
 function AnimatedTerminal() {
   const sequence = [];
+
+  if (!siteConfig.terminalEnabled) {
+    return null;
+  }
 
   terminalCommands.forEach((item) => {
     sequence.push(`$ ${item.command}\n\n${item.output}`);

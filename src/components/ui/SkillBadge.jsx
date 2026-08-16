@@ -1,7 +1,20 @@
+const icons = {
+  Docker: "🐳",
+  Kubernetes: "☸",
+  Jenkins: "⚙",
+  AWS: "☁",
+  Prometheus: "🔥",
+  Grafana: "📊",
+  Linux: "🐧",
+};
+
 function SkillBadge({ skill }) {
   return (
     <div
       className="
+        flex
+        items-center
+        gap-2
         rounded-lg
         border
         border-gray-700
@@ -13,7 +26,9 @@ function SkillBadge({ skill }) {
         hover:text-green-500
       "
     >
-      {skill}
+      <span>{icons[skill] || "•"}</span>
+
+      <span>{skill}</span>
     </div>
   );
 }

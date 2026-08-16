@@ -3,10 +3,10 @@ import StatusCard from "../../components/ui/StatusCard";
 const statuses = [
   ["Linux", "ONLINE"],
   ["Docker", "ONLINE"],
-  ["Kubernetes", "ONLINE"],
-  ["Monitoring", "ONLINE"],
-  ["Automation", "ONLINE"],
   ["Learning", "ACTIVE"],
+  ["Kubernetes", "ONLINE"],
+  ["Automation", "ONLINE"],
+  ["Dreams", "BUILDING..."],
 ];
 
 function SystemStatusSection() {

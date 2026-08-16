@@ -1,4 +1,5 @@
 import RadarWidget from "../../components/dashboard/RadarWidget";
+import { siteConfig } from "../../config/siteConfig";
 
 function ObservabilitySection() {
   return (
@@ -36,7 +37,7 @@ function ObservabilitySection() {
           </div>
         </div>
 
-        <RadarWidget />
+        {siteConfig.roboticsRadarEnabled && <RadarWidget />}
       </div>
     </section>
   );
