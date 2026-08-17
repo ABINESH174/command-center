@@ -84,7 +84,7 @@ function FooterSection() {
               </a>
 
               <a
-                href="https://github.com/your-username"
+                href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
@@ -94,7 +94,7 @@ function FooterSection() {
               </a>
 
               <a
-                href="https://linkedin.com/in/your-username"
+                href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition-colors"
