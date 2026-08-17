@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { socialLinks } from "../../data/socialLinks";
 import SystemClock from "../../components/ui/SystemClock";
 
 function Navbar() {
@@ -18,11 +19,19 @@ function Navbar() {
 
           <a href="#roadmap">Roadmap</a>
 
-          <a href="{socialLinks.github}" target="_blank">
+          <a
+            href={socialLinks.github}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FaGithub />
           </a>
 
-          <a href="{socialLinks.linkedin}" target="_blank">
+          <a
+            href={socialLinks.linkedin}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <FaLinkedin />
           </a>
           <SystemClock />
