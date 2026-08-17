@@ -11,7 +11,7 @@ function AnimatedTerminal() {
   }
 
   terminalCommands.forEach((item) => {
-    sequence.push(`$ ${item.command}\n\n${item.output}`);
+    sequence.push(`~$ ${item.command}\n\n${item.output}`);
     sequence.push(2000);
   });
 
@@ -19,7 +19,7 @@ function AnimatedTerminal() {
     <div className="card w-full terminal-font">
       <div className="mb-4 border-b border-gray-700 pb-3">
         <span className="text-green-500">●</span>
-        <span className="ml-2 text-gray-400">terminal</span>
+        <span className="ml-2 text-gray-400">abinesh@command-center</span>
       </div>
 
       <TypeAnimation
